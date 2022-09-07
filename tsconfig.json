@@ -1,9 +1,15 @@
 {
     "extends": "@tsconfig/node16/tsconfig.json",
     "compilerOptions": {
-        "outDir" : "./dist",
+        "outDir": "./dist",
+        "module": "commonjs",
+        "target": "es5",
         "sourceMap": true
     },
-    "include": ["./src/**/*.ts", "Esercizio-1.ts"],
-    "exclude": ["./src/**/*.test.ts"]
+    "include": [
+      "./src/**/*.ts"
+, "src/exercise16.mjs"    ],
+    "exclude": [
+      "./src/**/*.test.ts"
+    ]
 }
